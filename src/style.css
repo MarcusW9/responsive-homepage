@@ -6,7 +6,12 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   line-height: 1.5;
   color: #1a1a1a;
 }
@@ -60,7 +65,9 @@ img {
   width: 24px;
   height: 2px;
   background-color: #fff;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .hamburger {
@@ -69,7 +76,7 @@ img {
 
 .hamburger::before,
 .hamburger::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
 }
@@ -83,16 +90,16 @@ img {
 }
 
 /* animate to an X when nav is open */
-.nav-toggle[aria-expanded="true"] .hamburger {
+.nav-toggle[aria-expanded='true'] .hamburger {
   background-color: transparent;
 }
 
-.nav-toggle[aria-expanded="true"] .hamburger::before {
+.nav-toggle[aria-expanded='true'] .hamburger::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-.nav-toggle[aria-expanded="true"] .hamburger::after {
+.nav-toggle[aria-expanded='true'] .hamburger::after {
   transform: rotate(-45deg);
   top: 0;
 }
