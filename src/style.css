@@ -64,6 +64,7 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem;
+  font-family: var(--font-heading);
   background-color: var(--accent-color);
   color: var(--primary-text-color);
   position: relative;
