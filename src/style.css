@@ -1,7 +1,5 @@
 /* ---------- Base / mobile-first ---------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
-
 :root {
   --font-heading: 'Space Mono', monospace;
   --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
@@ -10,9 +8,7 @@
   --main-bg-color: #F6F1E9;
   --main-hero-color: #EAE3D2;
   --bg-card: #F1EBE1;
-  --border-color: #D2C4B4;    
-  --text-primary: #4A3E3D;    
-  --text-secondary: #73625E;  
+  --border-color: #D2C4B4;     
   --accent-color: #A68A78;
 
   --primary-text-color: #4A3E3D;
@@ -27,7 +23,6 @@
 
 body {
   line-height: 1.5;
-  color: #1a1a1a;
   background-color: var(--main-bg-color);
 }
 
@@ -41,10 +36,8 @@ ul {
 }
 
 img {
-  height:600px;
   max-width: 100%;
   display: block;
-
 }
 
 h1, h2, h3, h4 {
@@ -52,7 +45,7 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
-p {
+p, ul {
   font-family: var(--font-body);
   color: var(--secondary-text-color);
 }
@@ -221,21 +214,44 @@ p {
   gap: 1rem;
 }
 
+.case-studies-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .case-studies-container {
   display: grid;
   gap: 2rem;
   padding: 1rem;
 }
 
-.case-studies-container > case-study > h2 {
+.case-studies-container > .case-study > h2 {
   color: var(--primary-text-color);
+}
+
+/* ---------- Contact section ---------- */
+
+.contact-section {
+  font-family: inherit;
+}
+
+  .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: var(--bg-card);
+  border-radius: 12px;
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
   padding: 1rem;
   text-align: center;
-  background-color: #f3f4f6;
+  background-color: var(--accent-color);
 }
 
 /* ---------- Tablet and up ---------- */
@@ -287,6 +303,7 @@ p {
     object-fit: cover;
   }
 }
+
 
 /* ---------- Desktop and up ---------- */
 @media (min-width: 1024px) {
